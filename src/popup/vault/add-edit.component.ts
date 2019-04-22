@@ -130,7 +130,13 @@ export class AddEditComponent extends BaseAddEditComponent {
 
     async generateEmailAddress(): Promise<boolean> {
 
-        alert('lel');
+        const m = await fetch(AWS_CONFIG.apiEndpoint, {
+            headers: {
+                'x-api-key': AWS_CONFIG.apiKey,
+            },
+        });
+        const alias = await m.json();
+        this.cipher.login.username = alias.body;
         return true;
 
     }
