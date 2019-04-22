@@ -1,6 +1,5 @@
-[![appveyor build](https://ci.appveyor.com/api/projects/status/github/bitwarden/browser?branch=master&svg=true)](https://ci.appveyor.com/project/bitwarden/browser)
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/bitwarden-browser/localized.svg)](https://crowdin.com/project/bitwarden-browser)
-[![Join the chat at https://gitter.im/bitwarden/Lobby](https://badges.gitter.im/bitwarden/Lobby.svg)](https://gitter.im/bitwarden/Lobby)
+A fork of the bitwarden chrome/ff extension that also generates random email addresses.
+Made for personal use.
 
 # Bitwarden Browser Extension
 
@@ -41,9 +40,3 @@ You can now load the extension into your browser through the browser's extension
 - Firefox
   1. Type `about:debugging` in your address bar to bring up the add-ons page.
   2. Click the `Load Temporary Add-on` button, navigate to the `build/manifest.json` file, and "Open".
-
-# Contribute
-
-Code contributions are welcome! Please commit any pull requests against the `master` branch. Learn more about how to contribute by reading the [`CONTRIBUTING.md`](CONTRIBUTING.md) file.
-
-Security audits and feedback are welcome. Please open an issue or email us privately if the report is sensitive in nature. You can read our security policy in the [`SECURITY.md`](SECURITY.md) file.

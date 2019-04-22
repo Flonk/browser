@@ -13,3 +13,4 @@ webfonts/
 build/
 build.safariextension/
 coverage/
+aws_config.ts

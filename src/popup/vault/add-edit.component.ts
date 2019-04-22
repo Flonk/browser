@@ -17,6 +17,10 @@ import { UserService } from 'jslib/abstractions/user.service';
 
 import { AddEditComponent as BaseAddEditComponent } from 'jslib/angular/components/add-edit.component';
 
+// <MONKEYPATCH>
+import { AWS_CONFIG } from '../../aws_config.ts';
+// </MONKEYPATCH>
+
 @Component({
     selector: 'app-vault-add-edit',
     templateUrl: 'add-edit.component.html',
@@ -122,6 +126,13 @@ export class AddEditComponent extends BaseAddEditComponent {
             this.router.navigate(['generator']);
         }
         return confirmed;
+    }
+
+    async generateEmailAddress(): Promise<boolean> {
+
+        alert('lel');
+        return true;
+
     }
 
     async delete(): Promise<boolean> {

@@ -31,10 +31,18 @@
                 </div>
                 <!-- Login -->
                 <div *ngIf="cipher.type === cipherType.Login">
-                    <div class="box-content-row" appBoxRow>
-                        <label for="loginUsername">{{'username' | i18n}}</label>
-                        <input id="loginUsername" type="text" name="Login.Username" [(ngModel)]="cipher.login.username"
-                            inputmode="email" appInputVerbatim>
+                    <div class="box-content-row box-content-row-flex" appBoxRow>
+                        <div class="row-main">
+                            <label for="loginUsername">{{'username' | i18n}}</label>
+                            <input id="loginUsername" type="text" name="Login.Username" [(ngModel)]="cipher.login.username"
+                                inputmode="email" appInputVerbatim>
+                        </div>
+                        <div class="action-buttons">
+                            <a class="row-btn" href="#" appStopClick appBlurClick title="Generate Email Address"
+                                (click)="generateEmailAddress()">
+                                <i class="fa fa-lg fa-refresh"></i>
+                            </a>
+                        </div>
                     </div>
                     <div class="box-content-row box-content-row-flex" appBoxRow>
                         <div class="row-main">
